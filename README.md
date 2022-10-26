@@ -5,7 +5,7 @@ This project shows the basic concept of ETL, which stands for extract, transform
 * **Data Collection**
 * **Data Cleansing**
 * Transport to **Data Lake**
-* **Data Pipeline Ochestrarion**
+* **Data Pipeline Orchestration**
 * Transport to **Data Warehouse**
 * **Data Visualisation**
 
@@ -20,3 +20,9 @@ Finally, we save the tables as CSV file for the further process.
 ### Data Cleansing
 For data cleansing, we're going to clean and prepare the data before we transport the data to the Data Lake. In this cleansing process, we use Spark through Python using PySpark Package.
 First, we set the environment for Python to let it recognise Spark. Next, we install PySpark into Python and load the data to Spark. Then, we do the data profiling to understand the several information of each columns, such as count, mean, standard deviation, min, and max. After that, we do a syntactical anomalies (such as correcting the spellings) , a sematic anomalies (such as correcting the outlier), and fill the null value. Finally, we save the cleaned data as CSV files for the further process.
+
+### Data Lake
+As I mentioned, we use Google Cloud Service as a main cloud service. So for data lake, we use Google Cloud Storage for keeping the data we previously did. 
+To upload the data we had to the Cloud Storage, we need to create the bucket 
+
+### Data Pipeline Orchestration
