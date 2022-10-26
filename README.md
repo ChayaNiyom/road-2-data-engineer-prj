@@ -1,2 +1,2 @@
-# road-2-data-engineer-prj
-Project from Road to Data Engineer course
+# Road-to-Data-Engineer-project
+Project from Road to Data Engineer course by DataTh
