@@ -23,6 +23,7 @@ First, we set the environment for Python to let it recognise Spark. Next, we ins
 
 ### Data Lake
 As I mentioned, we use Google Cloud Service as a main cloud service. So for data lake, we use Google Cloud Storage for keeping the data we previously did. 
-To upload the data we had to the Cloud Storage, we need to create the bucket 
+To upload the data we had to the Cloud Storage, we need to create the bucket. Bucket in Cloud Storage is similar to the folder in our computer, but for bucket, we can transport the data to the data warehouse that support Google Cloud Storage
 
 ### Data Pipeline Orchestration
+Apache Airflow is the tool they selected for this project since Airflow is easy to monitor and run automatically. To use Airflow for this project, we need to active the service called Google Cloud Composer. Google Cloud Composer allows us to create the environment for Airflow and able to use Airflow without additional investment on server.
