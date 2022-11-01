@@ -1,5 +1,6 @@
 # Road to Data Engineer project
-## Project from Road to Data Engineer course by DataTh
+## Project from Road to Data Engineer course by DataTH
+
 
 This project shows the basic concept of ETL, which stands for extract, transform, and load. It contains 6 workshops, which are
 * **Data Collection**
@@ -10,7 +11,7 @@ This project shows the basic concept of ETL, which stands for extract, transform
 * **Data Visualisation**
 
 Google Cloud Service is the primary cloud service they utilize for their project. The authors of the R2DE course provided the database for this project. Teachers allowed us to use Google Colab as the coding notebook for the sessions on data collection and data cleansing.
-
+---
 ### Workshop 1: Data Collection
 We used PyMySQL Package to connect the MySQL database to Python for the purpose of data collection. Before connecting to the database, we had to configure the database credentials (the creator-only code is not shown here).
 Then, in order to make it simpler for users and improve the aesthetics of the tables, we changed it to Pandas. The tables (audible transaction & audible data) were then connected.
