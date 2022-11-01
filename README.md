@@ -18,7 +18,7 @@ Google Cloud Service is the primary cloud service they utilize for their project
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Overall_Workshop.jpg"/>
 </p>
 
-<h3 align="center"> Overview of Google Cloud Service's tools we use in this workshop </h3>
+<h5 align="center"> Overview of Google Cloud Service's tools we use in this workshop </h5>
 
 ---
 
