@@ -9,13 +9,13 @@ This project shows the basic concept of ETL, which stands for extract, transform
 * **Data Warehouse**
 * **Data Visualisation**
 
-The main cloud service they use in this project is Google Cloud Service. The database of this project comes from the creators of R2DE course.For Data Collection and Data Cleansing session, teachers let us use Google Colab as the notebook for coding.
+Google Cloud Service is the primary cloud service they utilize for their project. The authors of the R2DE course provided the database for this project. Teachers allowed us to use Google Colab as the coding notebook for the sessions on data collection and data cleaning.
 
 ### Workshop 1: Data Collection
-For data collection, we connected MySQL database through Python using PyMySQL Package. Before we connected to database, we needed to config database credential (No code revealed here since it's the secret of the creator).
-After that, we converted it to Pandas to make it easier for user and make the tables looks more beautiful. Then, we joined the tables (audible_transaction & audible_data).
-Not only a normal MySQL database, but teachers also showed how to get data from REST API using Requests package.
-Finally, we saved the tables as CSV file for the further process.
+We used PyMySQL Package to connect the MySQL database to Python for the purpose of data collection. Before connecting to the database, we had to configure the database credentials (the creator-only code is not shown here).
+Then, in order to make it simpler for users and improve the aesthetics of the tables, we changed it to Pandas. The tables (audible transaction & audible data) were then connected.
+Teachers demonstrated how to use the Requests package to obtain data from REST APIs in addition to a standard MySQL database.
+Finally, We saved the tables as a CSV file for use in the following steps.
 
 ### Workshop 2: Data Cleansing
 For data cleansing, we're going to clean and prepare the data before we transport the data to the Data Lake. In this cleansing process, we use Spark through Python using PySpark Package.
