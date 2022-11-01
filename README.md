@@ -9,7 +9,7 @@ This project shows the basic concept of ETL, which stands for extract, transform
 * **Data Warehouse**
 * **Data Visualisation**
 
-Google Cloud Service is the primary cloud service they utilize for their project. The authors of the R2DE course provided the database for this project. Teachers allowed us to use Google Colab as the coding notebook for the sessions on data collection and data cleaning.
+Google Cloud Service is the primary cloud service they utilize for their project. The authors of the R2DE course provided the database for this project. Teachers allowed us to use Google Colab as the coding notebook for the sessions on data collection and data cleansing.
 
 ### Workshop 1: Data Collection
 We used PyMySQL Package to connect the MySQL database to Python for the purpose of data collection. Before connecting to the database, we had to configure the database credentials (the creator-only code is not shown here).
@@ -18,18 +18,18 @@ Teachers demonstrated how to use the Requests package to obtain data from REST A
 Finally, We saved the tables as a CSV file for use in the following steps.
 
 ### Workshop 2: Data Cleansing
-For data cleansing, we're going to clean and prepare the data before we transport the data to the Data Lake. In this cleansing process, we use Spark through Python using PySpark Package.
-First, we set the environment for Python to let it recognise Spark. Next, we install PySpark into Python and load the data to Spark. Then, we did the data profiling to understand the several information of each columns, such as count, mean, standard deviation, min, and max. After that, we did a syntactical anomalies (such as correcting the spellings), a sematic anomalies (such as correcting the outlier), and fill the null value. Finally, we saved the cleaned data as CSV files for the further process.
+Before transferring the data to the Data Lake, we will clean and prepare it as part of data cleansing. Using Python's PySpark package, we apply Spark in this cleaning process.
+We first prepare Python's environment such that it can recognize Spark. The data is then loaded into Spark after PySpark has been installed in Python. Then, we profiled the data to understand the various details of each column, including the count, mean, standard deviation, minimum and maximum. After that, we completed a sematic anomalies (such as rectifying the outlier) and a syntactical abnormalities (such as filling the null value). Finally, for use in the following procedure, we saved the cleansed data as CSV files.
 
 ### Workshop 3: Data Lake
-As I mentioned, we use Google Cloud Service as a main cloud service. So for data lake, we use Google Cloud Storage for keeping the data we previously did. 
-To upload the data we had to the Cloud Storage, we need to create the bucket. Bucket in Cloud Storage is similar to the folder in our computer, but for bucket, we can transport the data to the data warehouse that support Google Cloud Storage
+We use Google Cloud Provider as our primary cloud service, as I have indicated. In order to save the data we previously processed, we use Google Cloud Storage for the data lake. 
+We must first create the bucket in order to upload the data we already had to the cloud storage. Comparable to a folder on a computer, a bucket in cloud storage allows us to send data to a data warehouse that supports Google Cloud Storage.
 
 ### Workshop 4: Data Pipeline Orchestration
-Apache Airflow is the tool they selected on this orchestration workshop since Airflow is easy to monitor and run automatically. To use Airflow for this project, we need to active the service called Google Cloud Composer. Google Cloud Composer allows us to create the environment for Airflow and able to use Airflow without additional investment on server. DAG, or Directed Acyclic Graph, is a topic we studied in this workshop. DAG would give the direction of the task for the data, or data flow. To run automatically, we need Cron as a schedule interval. Cron allow us to schedule Airflow as the users want.
+Since Apache Airflow is simple to monitor and operate automatically, that is the tool they chose for this orchestration workshop. We must turn on the Google Cloud Composer service in order to use Airflow for this project. We can set up an environment for Airflow using Google Cloud Composer, and we can use Airflow without having to invest more money on servers. We covered the subject of DAG, or Directed Acyclic Graph, in this session. DAG would indicate the task's or data flow's direction. We require Cron as a schedule interval so that it can run automatically. We can schedule Airflow using Cron as the users see fit.
 
 ### Workshop 5: Data Warehouse
-Data warehouse is the place where the data need to be ready for data scientist or data analyst use for their purposes. Google BigQuery is one of the tools we use from Google Cloud Service. In this workshop, we basically learned how to link Google Cloud Storage and Google BigQuery using Apache Airflow and write the DAG to merge the data from Database (MySQL) to REST API. We tried some queries on the merged data to see that it worked or not.
+The data must be prepared in a data warehouse so that data scientists and analysts can use it for their objectives. One of the Google Cloud Service products we employ is Google BigQuery. In this workshop, we primarily learnt how to use Apache Airflow to connect Google Cloud Storage and Google BigQuery, as well as how to create a DAG to combine data from a database (MySQL) with a REST API. To test whether the merged data would function, we ran various queries on it.
 
 ### Workshop 6: Data Visualisation 
-Data visualisation is how we’re going to visualise the data we have to a dashboard that can explain the status of the data. In this workshop, we use Google Data Studio as our main instrument. Before we begin, we must connect Google Data Studio to the data warehouse. Then we did some visualise according to the examples of the wireframes from Business Analyst.
+Data visualization is the method we'll use to translate the data we already have into a dashboard that can describe the data's state. Our primary tool in this workshop is Google Data Studio. Connecting Google Data Studio to the data warehouse is necessary before we start. Then, using Business Analyst's wireframe examples as a guide, we did some visualizing.
