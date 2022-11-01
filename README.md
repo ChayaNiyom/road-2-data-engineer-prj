@@ -3,12 +3,14 @@
 
 
 This project shows the basic concept of ETL, which stands for extract, transform, and load. It contains 6 workshops, which are
+
 * **Data Collection**
 * **Data Cleansing**
 * **Data Lake**
 * **Data Pipeline Orchestration**
 * **Data Warehouse**
 * **Data Visualisation**
+
 
 Google Cloud Service is the primary cloud service they utilize for their project. The authors of the R2DE course provided the database for this project. Teachers allowed us to use Google Colab as the coding notebook for the sessions on data collection and data cleansing.
 
