@@ -18,7 +18,7 @@ Google Cloud Service is the primary cloud service they utilize for their project
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/ETL.jpg"/>
 </p>
 
-<h5 align="center"> Parts of Data Pipeline which are Extract, Transform, and Load *(Credit:Road to Data Engineer 2.0 by DataTH)* </h5>
+<h5 align="center"> Parts of Data Pipeline which are Extract, Transform, and Load (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Overall_Workshop.jpg"/>
