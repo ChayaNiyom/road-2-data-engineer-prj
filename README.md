@@ -72,14 +72,35 @@ We must first create the bucket in order to upload the data we already had to th
 ### Workshop 4: Data Pipeline Orchestration
 Since Apache Airflow is simple to monitor and operate automatically, that is the tool they chose for this orchestration workshop. We must turn on the Google Cloud Composer service in order to use Airflow for this project. We can set up an environment for Airflow using Google Cloud Composer, and we can use Airflow without having to invest more money on servers. We covered the subject of DAG, or Directed Acyclic Graph, in this session. DAG would indicate the task's or data flow's direction. We require Cron as a schedule interval so that it can run automatically. We can schedule Airflow using Cron as the users see fit.
 
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop4_Description.jpg"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 4 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+
 ---
 
 ### Workshop 5: Data Warehouse
 The data must be prepared in a data warehouse so that data scientists and analysts can use it for their objectives. One of the Google Cloud Service products we employ is Google BigQuery. In this workshop, we primarily learnt how to use Apache Airflow to connect Google Cloud Storage and Google BigQuery, as well as how to create a DAG to combine data from a database (MySQL) with a REST API. To test whether the merged data would function, we ran various queries on it.
 
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_Description.jpg"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 5 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+
 ---
 
 ### Workshop 6: Data Visualisation 
 Data visualization is the method we'll use to translate the data we already have into a dashboard that can describe the data's state. Our primary tool in this workshop is Google Data Studio. Connecting Google Data Studio to the data warehouse is necessary before we start. Then, using Business Analyst's wireframe examples as a guide, we did some visualizing.
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop6_Wireframe.jpg"/>
+</p>
+
+<h5 align="center"> Overview of Wireframes we need to visualise in Workshop 6 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
 
 ---
