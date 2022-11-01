@@ -20,6 +20,8 @@ Google Cloud Service is the primary cloud service they utilize for their project
 
 <h5 align="center"> Parts of Data Pipeline which are Extract, Transform, and Load (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
+---
+
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Overall_Workshop.jpg"/>
 </p>
@@ -60,11 +62,15 @@ We use Google Cloud Provider as our primary cloud service, as I have indicated. 
 
 <h5 align="center"> Overview of Workshop 3 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
+---
+
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop3_GUI.png"/>
 </p>
 
 <h5 align="center"> User Interface of Google Cloud Storage </h5>
+
+---
 
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop3_CreateBucket.png"/>
@@ -83,17 +89,23 @@ Since Apache Airflow is simple to monitor and operate automatically, that is the
 
 <h5 align="center"> Overview of Workshop 4 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
+---
+
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop4_Composer.png"/>
 </p>
 
 <h5 align="center"> User Interface of Google Cloud Composer </h5>
 
+---
+
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop4_AirflowGUI.png"/>
 </p>
 
 <h5 align="center"> User Interface of Apache Airflow </h5>
+
+---
 
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop4_DAG.png"/>
@@ -116,11 +128,15 @@ The data must be prepared in a data warehouse so that data scientists and analys
 
 <h5 align="center"> Overview of Workshop 5 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
+---
+
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_Diagram.jpg"/>
 </p>
 
 <h5 align="center"> Overview of dataflow in Workshop 5 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+---
 
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_DataInfo.png"/>
@@ -128,11 +144,15 @@ The data must be prepared in a data warehouse so that data scientists and analys
 
 <h5 align="center"> Information of the dataset </h5>
 
+---
+
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_Audible.png"/>
 </p>
 
 <h5 align="center"> Data in the dataset after the merged process </h5>
+
+---
 
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_Query.png"/>
@@ -151,6 +171,8 @@ Data visualization is the method we'll use to translate the data we already have
 
 <h5 align="center"> Overview of Wireframes we need to visualise in Workshop 6 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
+---
+
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop6_Wireframe1.png"/>
 </p>
@@ -160,6 +182,8 @@ Data visualization is the method we'll use to translate the data we already have
 </p>
 
 <h5 align="center"> Overview of Wireframes we visualise </h5>
+
+---
 
 <p align="center">
 <img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop6_Wireframe3.png"/>
