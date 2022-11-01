@@ -117,7 +117,7 @@ The data must be prepared in a data warehouse so that data scientists and analys
 <h5 align="center"> Overview of Workshop 5 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
 <p align="center">
-<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_Diagram.png"/>
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_Diagram.jpg"/>
 </p>
 
 <h5 align="center"> Overview of dataflow in Workshop 5 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
