@@ -34,17 +34,38 @@ Then, in order to make it simpler for users and improve the aesthetics of the ta
 Teachers demonstrated how to use the Requests package to obtain data from REST APIs in addition to a standard MySQL database.
 Finally, We saved the tables as a CSV file for use in the following steps.
 
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop1_Description.jpg"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 1 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+
 ---
 
 ### Workshop 2: Data Cleansing
 Before transferring the data to the Data Lake, we will clean and prepare it as part of data cleansing. Using Python's PySpark package, we apply Spark in this cleaning process.
 We first prepare Python's environment such that it can recognize Spark. The data is then loaded into Spark after PySpark has been installed in Python. Then, we profiled the data to understand the various details of each column, including the count, mean, standard deviation, minimum and maximum. After that, we completed a sematic anomalies (such as rectifying the outlier) and a syntactical abnormalities (such as filling the null value). Finally, for use in the following procedure, we saved the cleansed data as CSV files.
 
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop2_Description.jpg"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 2 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+
 ---
 
 ### Workshop 3: Data Lake
 We use Google Cloud Provider as our primary cloud service, as I have indicated. In order to save the data we previously processed, we use Google Cloud Storage for the data lake. 
 We must first create the bucket in order to upload the data we already had to the cloud storage. Comparable to a folder on a computer, a bucket in cloud storage allows us to send data to a data warehouse that supports Google Cloud Storage.
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop3_Description.jpg"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 3 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
 
 ---
 
