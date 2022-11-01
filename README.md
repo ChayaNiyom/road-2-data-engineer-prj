@@ -19,16 +19,17 @@ Finally, we saved the tables as CSV file for the further process.
 
 ### Workshop 2: Data Cleansing
 For data cleansing, we're going to clean and prepare the data before we transport the data to the Data Lake. In this cleansing process, we use Spark through Python using PySpark Package.
-First, we set the environment for Python to let it recognise Spark. Next, we install PySpark into Python and load the data to Spark. Then, we did the data profiling to understand the several information of each columns, such as count, mean, standard deviation, min, and max. After that, we did a syntactical anomalies (such as correcting the spellings) , a sematic anomalies (such as correcting the outlier), and fill the null value. Finally, we saved the cleaned data as CSV files for the further process.
+First, we set the environment for Python to let it recognise Spark. Next, we install PySpark into Python and load the data to Spark. Then, we did the data profiling to understand the several information of each columns, such as count, mean, standard deviation, min, and max. After that, we did a syntactical anomalies (such as correcting the spellings), a sematic anomalies (such as correcting the outlier), and fill the null value. Finally, we saved the cleaned data as CSV files for the further process.
 
 ### Workshop 3: Data Lake
 As I mentioned, we use Google Cloud Service as a main cloud service. So for data lake, we use Google Cloud Storage for keeping the data we previously did. 
 To upload the data we had to the Cloud Storage, we need to create the bucket. Bucket in Cloud Storage is similar to the folder in our computer, but for bucket, we can transport the data to the data warehouse that support Google Cloud Storage
 
 ### Workshop 4: Data Pipeline Orchestration
-Apache Airflow is the tool they selected on this orchestration workshop since Airflow is easy to monitor and run automatically. To use Airflow for this project, we need to active the service called Google Cloud Composer. Google Cloud Composer allows us to create the environment for Airflow and able to use Airflow without additional investment on server. DAG, or Directed Acyclic Graph, is a topic we studied in this workshop. DAG would give the direction of the task for the data, or data flow.
+Apache Airflow is the tool they selected on this orchestration workshop since Airflow is easy to monitor and run automatically. To use Airflow for this project, we need to active the service called Google Cloud Composer. Google Cloud Composer allows us to create the environment for Airflow and able to use Airflow without additional investment on server. DAG, or Directed Acyclic Graph, is a topic we studied in this workshop. DAG would give the direction of the task for the data, or data flow. To run automatically, we need Cron as a schedule interval. Cron allow us to schedule Airflow as the users want.
 
 ### Workshop 5: Data Warehouse
-Google BigQuery is one of the tools we use from Google Cloud Service. After we completed the tutorial of Airflow, in this workshop, we were using Airflow to use DAG, merge datas from Database and READ API.
+Data warehouse is the place where the data need to be ready for data scientist or data analyst use for their purposes. Google BigQuery is one of the tools we use from Google Cloud Service. In this workshop, we basically learned how to link Google Cloud Storage and Google BigQuery using Apache Airflow and write the DAG to merge the data from Database (MySQL) to REST API. We tried some queries on the merged data to see that it worked or not.
 
 ### Workshop 6: Data Visualisation 
+Data visualisation is how we’re going to visualise the data we have to a dashboard that can explain the status of the data. In this workshop, we use Google Data Studio as our main instrument. Before we begin, we must connect Google Data Studio to the data warehouse. Then we did some visualise according to the examples of the wireframes from Business Analyst.
