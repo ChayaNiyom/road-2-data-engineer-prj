@@ -53,7 +53,6 @@ We first prepare Python's environment such that it can recognize Spark. The data
 
 <h5 align="center"> Overview of Workshop 2 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
-
 ---
 
 ### Workshop 3: Data Lake
@@ -66,6 +65,17 @@ We must first create the bucket in order to upload the data we already had to th
 
 <h5 align="center"> Overview of Workshop 3 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop3_GUI.png"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 1 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop3_CreateBucket.png"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 1 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
 ---
 
@@ -78,6 +88,29 @@ Since Apache Airflow is simple to monitor and operate automatically, that is the
 
 <h5 align="center"> Overview of Workshop 4 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop4_Composer.png"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 4 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop4_AirflowGUI.png"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 4 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop4_DAG.png"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 4 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop4_DAG_Code.png"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 4 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
 ---
 
@@ -90,6 +123,29 @@ The data must be prepared in a data warehouse so that data scientists and analys
 
 <h5 align="center"> Overview of Workshop 5 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_Diagram.png"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 5 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_DataInfo.png"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 5 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_Audible.png"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 5 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop5_Query.png"/>
+</p>
+
+<h5 align="center"> Overview of Workshop 5 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
 ---
 
@@ -102,5 +158,22 @@ Data visualization is the method we'll use to translate the data we already have
 
 <h5 align="center"> Overview of Wireframes we need to visualise in Workshop 6 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop6_Wireframe1.png"/>
+</p>
+
+<h5 align="center"> Overview of Wireframes we need to visualise in Workshop 6 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop6_Wireframe2.png"/>
+</p>
+
+<h5 align="center"> Overview of Wireframes we need to visualise in Workshop 6 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
+
+<p align="center">
+<img src="https://github.com/ChayaNiyom/road-2-data-engineer-prj/blob/main/Workshop6_Wireframe3.png"/>
+</p>
+
+<h5 align="center"> Overview of Wireframes we need to visualise in Workshop 6 (Credit: Road to Data Engineer 2.0 by DataTH) </h5>
 
 ---
