@@ -1,0 +1,10 @@
+# import pandas as pd
+# audible_data = pd.DataFrame(result)
+# type(audible_data) # (Checking for data types of audible_data table)
+# audible_data.set_index("Book_ID") # (Making "Book_ID" as an index)
+# audible_data = pd.DataFrame(result), index_col="Book_ID" # (In case you don't want to set_index() later, write index_col="Book_ID" in the line that you want to create Dataframe)
+------------------------------------------
+# (Alternative way to query using Pandas)
+# sql = "SELECT * FROM audible_transaction"
+# audible_transaction = pd.read_sql(sql, connection)
+# audible_transaction

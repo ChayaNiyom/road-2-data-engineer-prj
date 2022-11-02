@@ -1,0 +1,21 @@
+# (list all tables using SQL command "show tables")
+
+# cursor = connection.cursor()
+# cursor.execute("show tables;") 
+# tables = cursor.fetchall()
+# cursor.close()
+# print(tables)
+--------------------------------------
+# (use "with statement" instead of "cursor.close()")
+# (TODO: Try to write SQL Query data from table audible_data)
+
+# with connection.cursor() as cursor:
+
+# (query from table audible_data)
+# print("number of rows: ", len(result))
+
+# (Checking the result by typing result and execute)
+# result
+
+# (Checking the type of result)
+# type(result)
