@@ -1,0 +1,7 @@
+# (We need to join audible_transaction and audible_data using left join)
+#   (audible_transaction: book_id
+#           audible_data: Book_ID)
+# transaction = audible_transaction.merge(audible_data, how="left", left_on="book_id", right_on="Book_ID")
+
+# (For checking the result of joining table)
+# transaction
