@@ -1,0 +1,6 @@
+# import requests
+
+# url = "https://r2de2-workshop-vmftiryt6q-ts.a.run.app/usd_thb_conversion_rate"
+
+# print(type(result_conversion_rate))
+# assert isinstance(result_conversion_rate, dict) # (The result we want needs to be Dict type)
