@@ -1,0 +1,14 @@
+# (conversion_rate table come from the conversion result_conversion_rate table using Pandas)
+# (Copy column timestamp to the column name "date" to allow us to join to the conversion_rate table)
+# transaction['date'] = transaction['timestamp']
+# transaction
+
+# (Change form timestamp to date for 2 dataframe (transaction, conversion_rate))
+# transaction['date'] = pd.to_datetime(transaction['date']).dt.date
+# conversion_rate['date'] = pd.to_datetime(conversion_rate['date']).dt.date
+# transaction.head()
+# final_df = transaction.merge(conversion_rate, how="left", left_on="date", right_on="date")
+# final_df # (For chacking)
+# final_df["Price"] = final_df.apply(lambda x: x["Price"].replace("$",""), axis=1) #axis=1 means do it only that (column), axis=0 (row) #apply use for fn only
+# final_df["Price"] = final_df["Price"].astype(float) #change to float
+# final_df.head() # (Shows only 5 rows)
