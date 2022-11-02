@@ -7,7 +7,7 @@
 # print(tables)
 --------------------------------------
 # (use "with statement" instead of "cursor.close()")
-# TODO: Try to write SQL Query data from table audible_data
+# (TODO: Try to write SQL Query data from table audible_data)
 
 # with connection.cursor() as cursor:
 
