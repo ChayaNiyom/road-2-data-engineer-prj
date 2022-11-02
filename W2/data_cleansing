@@ -1,0 +1,91 @@
+# (Show Schema)
+# dt.printSchema() # (It shows that "timestamp" is in string type, we need to change it to date-time type)
+# dt.select("timestamp").show(10)
+---------------------------------
+# (Change string to datetime, Important***)
+# from pyspark.sql import functions as f
+
+# dt_clean = dt.withColumn("timestamp",
+                        f.to_timestamp(dt.timestamp, 'yyyy-MM-dd HH:mm:ss')
+                        )
+# dt_clean.show()
+---------------------------------
+# Anomalies Check
+# (In this dataset, how many countries do we have information?; distinct() = No Repeat selected)
+# dt_clean.select("country").distinct().count()
+
+# dt_clean.select("Country").distinct().sort("Country").show( 58, False ) # (Show the sorted list of countries we have info), There are Japane and Japan)
+
+# (Correct Japane to Japan)
+# dt_clean.where(dt_clean['Country'] == 'Japane').show()
+# from pyspark.sql.functions import when
+
+# dt_clean_country = dt_clean.withColumn("CountryUpdate", 
+                                       when(dt_clean['Country'] == 'Japane', 'Japan').otherwise(dt_clean['Country'])
+                                       )
+# dt_clean_country.select("CountryUpdate").distinct().sort("CountryUpdate").show(58, False)
+# dt_clean = dt_clean_country.drop("Country").withColumnRenamed('CountryUpdate', 'Country') # (Replace "Country" with "CountryUpdate" column)
+# dt_clean.show()
+---------------------------------
+# Sematic Anomalies
+# dt_clean.select("user_id").count() # (Total count is 500k)
+# dt_clean.where(dt_clean["user_id"].rlike("^[a-z,0-9]{8}$")).count() # (With Regular Expression, there are 499,996 rows that match our condition)
+
+# dt_correct_userid = dt_clean.filter(dt_clean["user_id"].rlike("^[a-z,0-9]{8}$"))
+# dt_incorrect_userid = dt_clean.subtract(dt_correct_userid)
+
+# dt_incorrect_userid.show(10) # (We got 2 null and 2 wrong user_id)
+# dt_clean_userid = dt_clean.withColumn("user_id_update", 
+                                       when(dt_clean['user_id'] == 'ca86d17200', 'ca86d172').otherwise(dt_clean['user_id'])
+                                       )
+# dt_correct_userid = dt_clean_userid.filter(dt_clean_userid["user_id"].rlike("^[a-z,0-9]{8}$"))
+# dt_incorrect_userid = dt_clean_userid.subtract(dt_correct_userid)
+
+# dt_incorrect_userid.show(10)
+# dt_clean = dt_clean_userid.drop("user_id").withColumnRenamed('user_id_update', 'user_id')
+---------------------------------
+# Missing value
+# from pyspark.sql.functions import col, sum
+
+# dt_nulllist = dt_clean.select([ sum(col(colname).isNull().cast("int")).alias(colname) for colname in dt_clean.columns ])
+# dt_nulllist.show()
+# dt_clean.where( dt_clean.user_id.isNull() ).show()
+# (Replace null values with 00000000)
+# dt_clean_userid = dt_clean.withColumn("user_id_update", 
+                                  when(dt_clean['user_id'].isNull() , '00000000').otherwise(dt_clean['user_id'])
+                                 )
+dt_clean = dt_clean_userid.drop("user_id").withColumnRenamed('user_id_update', 'user_id')
+dt_clean.where( dt_clean.user_id.isNull() ).show()
+---------------------------------
+# (Clean with Spark SQL)
+# (Change the data from Spark DataFrame to TempView first)
+# dt.createOrReplaceTempView("data")
+# dt_sql = spark.sql("SELECT * FROM data")
+# dt_sql.show()
+#dt_sql_country = spark.sql("""
+# SELECT distinct country
+  FROM data
+  ORDER BY country
+  """)
+# dt_sql_country.show(100)
+# dt_sql_result = spark.sql("""
+# SELECT timestamp, user_id, book_id,
+  CASE WHEN country = 'Japane' THEN 'Japan' ELSE country END AS country,
+  price
+  FROM data
+  """)
+# dt_sql_result.show()
+#dt_sql_result.select("country").distinct().sort("country").show(58, False)
+# dt_sql_result2 = spark.sql("""
+# SELECT *
+  FROM data
+  WHERE user_id NOT RLIKE '^[a-z,0-9]{8}$'
+  """)
+# dt_sql_result2.show()
+# dt_sql_result3 = spark.sql("""
+# SELECT timestamp,
+  CASE WHEN user_id = 'ca86d17200' THEN 'ca86d172' ELSE user_id END AS user_id,
+  country, price
+  FROM data
+  """)
+# dt_sql_result3.show()
